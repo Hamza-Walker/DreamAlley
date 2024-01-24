@@ -13,15 +13,21 @@
     "studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.17.19",
+    "@trpc/client": "^11.0.0-next-beta.228",
+    "@trpc/next": "^11.0.0-next-beta.228",
+    "@trpc/react-query": "^11.0.0-next-beta.228",
+    "@trpc/server": "^11.0.0-next-beta.228",
     "dotenv": "^16.4.0",
     "drizzle-kit": "^0.20.13",
     "drizzle-orm": "^0.29.3",
     "drizzle-zod": "^0.5.1",
-    "next": "14.1.0",
     "pg": "^8.11.3",
     "react": "^18",
     "react-dom": "^18",
-    "tsx": "^4.7.0"
+    "react-query": "^3.39.3",
+    "tsx": "^4.7.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
