@@ -1,13 +1,18 @@
-import 'dotenv/config';
+import * as dotenv from 'dotenv';
+
 import type { Config } from 'drizzle-kit';
 
-export default {
-	schema: './src/db/schema/index.ts',
-	out:'./src/db/drizzle',
-	driver:'pg',
-	dbCredentials: {
-		connectionString: String(process.env.DB_URL),
+dotenv.config({path : '.env'})
 
-	},
-       	strict:true ,
-	}satisfies Config; 
+if (!process.env.DATABASE_URL){
+    console.log( "🍇 cannot find databse url")
+}
+
+export default {
+    schema : './src/lib/supabase/schema.ts', 
+    out: './migrations',
+    driver: 'pg',
+    dbCredentials: {
+        connectionString: process.env.DATABASE_URL || '',
+    }
+} satisfies Config; 
