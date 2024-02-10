@@ -1,5 +1,7 @@
-{
-  "compilerOptions": {
+{    
+"compilerOptions": {
+    "sourceMap": true,
+    "target":"es6", 
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,8 +20,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "@/lib/*": ["lib/*"]
+		}
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
