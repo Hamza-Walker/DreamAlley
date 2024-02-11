@@ -2,12 +2,10 @@ import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import * as React from "react"
 
 import { ChevronDownIcon } from "@radix-ui/react-icons"
-import { cn } from "../../../lib/utils"
-import { cva } from "class-variance-authority"
 import { renderNavItems } from './navItems'; // Adjust the import path based on your project structure
 import s from './Navbar.module.css'; // Import the CSS Module
-
-// Simplified NavigationMenu component
+import logo from './logo'; 
+// Simplified NavigationMenu 
 
 const NavigationMenu = ({ children , className } : { children: React.ReactNode , className: string}) => {
   return (
@@ -62,7 +60,8 @@ const NavigationMenuComponent = () => {
       <div className={s.nav}>
         <NavigationMenuList className={s.navMenu}>
           {/* Use the renderNavItems function to render the navigation items */}
-          {renderNavItems()}
+					{logo()}
+					{renderNavItems()}
         </NavigationMenuList>
       </div>
     </NavigationMenu>

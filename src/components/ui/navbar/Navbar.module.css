@@ -13,7 +13,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 0;
   }
   
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: 1.5rem;
-    gap: 1rem;
+    gap: 2.5rem;
   }
   
   .link {
@@ -41,4 +42,21 @@
     outline: none;
     color: #212529; /* Focus text color (a different shade of black) */
   }
+
+  @media screen and (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+  
+    .navMenu {
+      margin: 0; /* Remove left margin on smaller screens */
+    }
+  
+    .link {
+      display: block; /* Make links stack vertically on smaller screens */
+      margin-bottom: 0.5rem; /* Add spacing between stacked links */
+    }
+  }
+  
   
