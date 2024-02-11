@@ -1,9 +1,16 @@
-import React from 'react'
 
-const  homePage = () => {
+'use client';
+
+import NavigationMenuComponent from '../../components/ui/navbar/Navigation-menu';
+import React from 'react';
+
+const HomePage = () => {
   return (
-    <div> homePage</div>
-  )
-}
+    <div>
+      <NavigationMenuComponent />
+      <div>Home Page</div>
+    </div>
+  );
+};
 
-export default  homePage
+export default HomePage;

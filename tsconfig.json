@@ -1,6 +1,5 @@
 {    
 "compilerOptions": {
-    "sourceMap": true,
     "target":"es6", 
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -19,11 +18,12 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@/lib/*": ["lib/*"]
 		}
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }
