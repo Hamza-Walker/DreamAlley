@@ -2,9 +2,10 @@ import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import * as React from "react"
 
 import { ChevronDownIcon } from "@radix-ui/react-icons"
+import logo from '../logo/logo';
 import { renderNavItems } from './navItems'; // Adjust the import path based on your project structure
 import s from './Navbar.module.css'; // Import the CSS Module
-import logo from './logo'; 
+
 // Simplified NavigationMenu 
 
 const NavigationMenu = ({ children , className } : { children: React.ReactNode , className: string}) => {
